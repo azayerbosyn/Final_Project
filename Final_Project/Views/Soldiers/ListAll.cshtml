@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+
+
+
+
+
+    <h1>This is a list of Soldiers and his information:</h1>
+    <h2>@Model.SoldiCategory</h2>
+    <div class=" row mt-5 mb-2">
+        @{
+            foreach (var soldier in Model.AllSoldiers)
+            {
+                // <img class="img-tumbnail" src="@soldier.Img" alt="@soldier.Name" />
+                //добавить в дивку с инфой о студенте
+                <div class="col-lg-4">
+                   
+                    <h3>Name: @soldier.Name</h3>
+                    <h3>SurName: @soldier.Surname </h3>
+                    
+                    <hr>
+                </div>
+            }
+
+        }
+    </div>

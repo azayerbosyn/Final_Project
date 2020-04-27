@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css//bootstrap.min.css" rel=" stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <header role="banner">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand absolute" href="ListAll.cshtml" style="margin-left: -60px;"><img src="img/Min.png" style="width: 130px;" alt=""> ПОРТАЛ ВОИНСКОГО УЧЕТА РК</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">О портале</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog-single.html">Аккаунт</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav absolute-right">
+                        <li>
+                            <a href="login.html" id="lt" class="tabs">Войти</a> / <a href="register.html" id="rt" class="tabs">Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <scripts src="/js/bootstrap.min.js"></scripts>
+
+
+</body>
+</html>
